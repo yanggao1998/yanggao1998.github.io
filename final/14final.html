@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light of Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: white;
+            color: #003366; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #003366;
+        }
+
+        .logo {
+            width: 220px; 
+            height: 70px;
+        }
+
+        .search-bar {
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 2px solid #003366; 
+            width: 350px; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #003366;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            background-image: url('file:///Users/gy/Desktop/final/online.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 80vh; 
+            color: white;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        /* Featured Courses Section */
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            margin: 15px 0;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            border-color: #005bb5;
+        }
+
+        .btn-primary:hover {
+            background-color: #005bb5;
+            border-color: #004494;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 40px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .about-text {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .about-text div {
+            width: 48%;
+        }
+
+        .about-section h3 {
+            font-size: 2rem;
+            color: #003366;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 40px 0;
+            background-color: #f4f8fb;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .form-control {
+            font-size: 1rem;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="file:///Users/gy/Desktop/final/logo.jpg" alt="Logo" class="logo">
+        <input type="text" class="search-bar" placeholder="Search for courses...">
+        
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#courses" class="nav-link">Courses</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="new/login.html" class="nav-link">Log In</a>
+            <a href="new/signup.html" class="nav-link">Sign Up</a>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Unlocking potential by bridging the education gap.</h1>
+            <p>Join us in our cause as we support the next generation of learners today.</p>
+        </div>
+    </div>
+
+    <div id="courses" class="container">
+        <h3>Featured Courses</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://crampete-staticfiles.s3.ap-south-1.amazonaws.com/blogs/Blog-131/Web-Development1.png" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to Web Development</h5>
+                        <p class="card-text">Learn the basics of HTML, CSS, and JavaScript to build your first website.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.classcentral.com/report/wp-content/uploads/2020/03/cs-intro-courses.png" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to Science course</h5>
+                        <p class="card-text">There are many introductory science courses available, including online courses, homeschooling resources, and other options.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/qXjvuMTWxGJmsldzk-lf5dAQzlAcki2xPF66Hdmeo8_xDHYWraUmw-ot3VU39fZmInjDuoQpJTDygg6UdvaTLDA1SEWq8XwPxMhTbWCnGQ9fvGKWVRCSkHxukN9-7Y_d9VdiXLTz=s1600" class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to Digital Design course</h5>
+                        <p class="card-text">An introduction to machine learning techniques and applications in real-world scenarios.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="about-section">
+        <img src="file:///Users/gy/Desktop/final/new/day-picture-id1163588010.jpg" alt="About Image">
+        <div class="about-text">
+            <div>
+                <h3>Our Mission</h3>
+                <p>We want to ensure that every child has access to quality education and the tools they need to succeed. Our organization has been doing this since 2030, and we can sustain this mission with the support of our generous supporters.</p>
+            </div>
+            <div>
+                <h3>Our Belief</h3>
+                <p>A more equitable educational environment awaits when we unite and champion others in need. We've inspired 100 curious, ambitious, and excellent scholars and are determined to increase that by partnering with communities and donors.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Light of Learning. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
