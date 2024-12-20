@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light of Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: white;
+            color: #003366; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #003366;
+        }
+
+        .logo {
+            width: 220px; 
+            height: 70px;
+        }
+
+        .search-bar {
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 2px solid #003366; 
+            width: 350px; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #003366;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 40px 0;
+            background-color: #f4f8fb;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .form-control {
+            font-size: 1rem;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo2.jpg" alt="Logo" class="logo">
+        <input type="text" class="search-bar" placeholder="Search for courses...">
+        
+        <div class="nav-links">
+            <a href="new/home.html" class="nav-link">Home</a>
+            <a href="new/courses.html" class="nav-link">Courses</a>
+            <a href="new/about.html" class="nav-link">About Us</a>
+            <a href="new/contact.html" class="nav-link">Contact</a>
+            <a href="new/login.html" class="nav-link">Log In</a>
+            <a href="new/signup.html" class="nav-link">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Light of Learning. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

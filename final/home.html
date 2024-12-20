@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light of Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: white;
+            color: #003366; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #003366;
+        }
+
+        .logo {
+            width: 220px; 
+            height: 70px;
+        }
+
+        .search-bar {
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 2px solid #003366; 
+            width: 350px; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #003366;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            background-image: url('https://cgoe.stanford.edu/sites/default/files/styles/widescreen_small/public/2020-08/online-executive-education-program-through-OpenClassrooms.jpg?itok=BSkQYTog'); 
+            background-size: cover;
+            background-position: center;
+            height: 90vh; 
+            color: white;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        /* Featured Courses Section */
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            margin: 15px 0;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            border-color: #005bb5;
+        }
+
+        .btn-primary:hover {
+            background-color: #005bb5;
+            border-color: #004494;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <input type="text" class="search-bar" placeholder="Search for courses...">
+        
+        <div class="nav-links">
+            <a href="new/home.html" class="nav-link">Home</a>
+            <a href="new/courses.html" class="nav-link">Courses</a>
+            <a href="new/about.html" class="nav-link">About Us</a>
+            <a href="new/contact.html" class="nav-link">Contact</a>
+            <a href="new/login.html" class="nav-link">Log In</a>
+            <a href="new/signup.html" class="nav-link">Sign Up</a>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Unlocking potential by bridging the education gap.</h1>
+            <p>Join us in our cause as we support the next generation of learners today.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Light of Learning. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
